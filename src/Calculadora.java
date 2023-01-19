@@ -43,7 +43,9 @@ public class Calculadora {
             case '-':
                 result = firstNumber - secondNumber;
                 break;
-                // TODO: multiplication operations.
+            case '*':
+                result = firstNumber * secondNumber;
+                break;
             default:
                 System.out.println("Operation undefined try again.");
                 result = calculate(firstNumber, secondNumber, getOperation());
