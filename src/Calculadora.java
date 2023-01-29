@@ -46,6 +46,14 @@ public class Calculadora {
             case '*':
                 result = firstNumber * secondNumber;
                 break;
+            case '/':
+                if (secondNumber == 0){
+                    System.out.println("we cannot divide between 0.");
+                    result = calculate(firstNumber, getNumber(), operation);
+                } else {
+                        result = firstNumber / secondNumber;
+                }
+                break;
             default:
                 System.out.println("Operation undefined try again.");
                 result = calculate(firstNumber, secondNumber, getOperation());
