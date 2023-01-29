@@ -46,6 +46,7 @@ public class Calculadora {
             case '*':
                 result = firstNumber * secondNumber;
                 break;
+                // TODO create divide operation
             default:
                 System.out.println("Operation undefined try again.");
                 result = calculate(firstNumber, secondNumber, getOperation());
