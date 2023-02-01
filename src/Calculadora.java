@@ -57,6 +57,7 @@ public class Calculadora {
             default:
                 System.out.println("Operation undefined try again.");
                 result = calculate(firstNumber, secondNumber, getOperation());
+                // something
         }
         return result;
     }
